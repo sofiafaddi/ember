@@ -1,0 +1,420 @@
+blockquote:before{
+    content: '' !important;
+}
+
+blockquote:after{
+    border-radius: 0px !important;
+}
+
+blockquote {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif !important;
+    padding: 10px 20px !important;
+    margin: 0 0 20px !important;
+    font-size: 22px !important;
+    border: 0 !important;
+    border-left: 5px solid #eee !important;
+    border-radius: 0px !important;
+}
+
+blockquote .small, blockquote footer, blockquote small {
+    margin-top: 10px;
+    display: block !important;
+    font-size: 80% !important;
+    line-height: 1.42857143 !important;
+    color: #777 !important;
+    font-style: italic;
+}
+
+.header_slide {
+    background: url('images/background_slide.png') no-repeat;
+    height: 94px;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+.header_slide img {
+        padding: 25px 0;
+}
+.deck-container > .slide {
+    padding: 0 !important;
+}
+.deck-container {
+    background: #faf4f1 !important;
+}
+.logo_footer {
+    position: fixed;
+    left: 10px;
+    color: #888;
+    z-index: 3;
+    margin: 0;
+    width: 90px;
+    bottom: -20px;
+}
+.deck-status .deck-status-current {
+    color: #e36550;
+}
+.deck-container .deck-status {
+    color:#444;
+    font-size: 22px;
+}
+.slide h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    background: #e36550;
+    padding: 15px 0;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    text-shadow: 0 0 0;
+    margin: 100px auto  30px;
+    width: 50%;
+    font-size: 30px;
+    box-shadow: 5px 5px 4px #444;
+}
+.presenter {
+    margin-top: 40px;
+}
+.presenter li {
+    list-style: none;
+    line-height: 24px;
+    font-size: 22px;
+}
+.presenter li:first-child {
+    color:#000;
+    text-decoration: underline;
+    font-size: 25px;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 10px;
+
+}
+.presenter ul {
+    width: 190px;
+    margin: 0 auto;
+}
+.presenter p {
+    color: #000;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+    right: 0;
+    margin-bottom: 0;
+    font-size: 29px;
+}
+.col-left {
+    width: 50%;
+    float: left;
+    padding:0  10px;
+    box-sizing: border-box;
+}
+.col-left img {
+    width :160px;
+    float: left;
+    margin: 40px;
+}
+
+/* Architecture */
+.shadow {
+    font-style: italic;
+}
+
+.col-left.big img {
+    width: auto !important;
+    margin-bottom: 10px;
+    margin: 0 auto !important;
+    display: block;
+    float: none;
+}
+
+
+
+.img-big {
+    margin: 0px !important;
+}
+
+.col-left.big span{
+        display: block;
+    text-align: center;
+    font-size: small;
+    margin-bottom: 10px;
+}
+
+ .paragraph {
+    font-size:23px;
+    text-align: justify;
+}
+
+
+
+.footer {
+    clear: both;
+    border-top: 1px solid grey;
+    padding-top: 15px;
+}
+
+.footer p{
+    font-size: medium;
+}
+
+.table, .table th, .table tr td {
+    padding: 5px;
+}
+
+.table tr td {
+    border: 1px solid #e36550;
+}
+
+.table {
+    width: 100%;
+}
+
+.table th  , .table_comparaison th{
+    background: #e36550;
+    border: 0;
+    font-weight: normal !important;
+    font-size: x-large !important;
+    color: #fff;
+    text-shadow: 0 0 0
+}
+
+.table .first-child_tr  {
+    font-weight: bolder;
+}
+
+/* added all even rows a #eee color  */
+.table tr:nth-child(even) {
+    background-color: #eee;
+}
+
+/* added all odd rows a #fff color  */
+.table tr:nth-child(odd) {
+    background-color:#fff;
+}
+
+/* *** */
+
+.content_slide {
+    padding: 30px;
+    overflow: hidden;
+}
+.content_slide h5 {
+    color:#e36550;
+    margin: 40px 0 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.critere li {
+    font-size: 24px;
+    list-style-type: none;
+
+}
+.critere li:before {
+    /* Unicode bullet symbol */
+    content: '\2022 ';
+    /* Bullet color */
+    color: #e36550;
+    padding-right: 0.5em;
+}
+.menu li {
+        font-size: 14px;
+    color: #fff;
+    line-height: 10px;
+    font-weight: 100;
+    text-shadow: 0 0 0 #000; 
+    font-family: 'Source Sans Pro', sans-serif;
+    list-style: none;
+    opacity: 0.7;
+}
+.menu li.active {
+    font-size: 16px;
+    opacity: 1;
+    font-weight: bold;
+}
+.without_menu img , .menu{
+    float: left;
+}
+.without_summer {
+    width: 500px;
+    margin: 0 auto
+}
+.menu {
+    border-left: 2px solid #fff;
+    padding: 3px 0 4px;
+    padding-left: 40px;
+}
+table th img {
+    width: 50px;
+    margin: 0 auto;
+
+}
+table td {
+    font-size: 16px;
+    font-weight: lighter;
+}
+table ul li {
+    list-style: none;
+    line-height: 16px;
+    padding: 1px 0;
+
+}
+table ul {
+    margin: 0;
+}
+.table_comparaison, .table_comparaison th, .table_comparaison tr td {
+        padding: 5px;
+}
+.table_comparaison tr td {
+    border: 1px solid #e36550;
+}
+.table_comparaison {
+    width: 100%;
+}
+.table_comparaison th {
+    background: #e36550;
+    border: 0;
+}
+.table_comparaison th , .table_comparaison tr td {
+    width: 21%;
+}
+.table_comparaison .first-child_tr  {
+    font-weight: bolder;
+}
+.table_comparaison .first-child_tr  {
+    width: 16%;
+}
+.table_comparaison tr:nth-child(even) {            /* added all even rows a #eee color  */
+    background-color: #eee;     }
+
+.table_comparaison tr:nth-child(odd) {            /* added all odd rows a #fff color  */
+background-color:#fff;      }
+
+.content_slide .tableau_titre {
+    margin: 0;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+.content_slide .tableau_titre  span {
+    display: inline-block;
+    margin-right: 15px;
+}
+.app  p {
+    font-size: 20px;
+}
+.app img {
+    float: none;
+    border: 1px solid #000;
+    box-shadow: 1px 1px 10px #000;
+    width: 360px;
+    margin: 5px auto;
+}
+.plan ul li {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+}
+.plan ul > li {
+    font-size: 23px;
+    line-height: 20px;
+    padding: 8px 0;
+}
+.plan ul > li > ul > li{
+    font-size: 19px;
+    padding: 4px 0;
+}
+.plan ul {
+    padding-top: 10px;
+    list-style: none;
+}
+.appli {
+    list-style: none;
+}
+.appli  li span {
+    color: #e36550;
+    font-size: 26px;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.generalite {
+    list-style: none;
+	
+}
+
+.generalite  li span {
+    color: #e36550;
+    font-size: 26px;
+    display: inline-block;
+    margin-right: 10px;
+}
+.content_slide .generalite_titre {
+    margin: 0;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+.content_slide .generalite_titre  span {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.fleche {
+	width: 10px;
+	 height: 50px; 
+}
+
+.ember-insp {
+	width :40%;
+    float: right;
+    margin: 10px;		
+}
+.imgVersions {
+	float:left;
+	width:50%
+}
+
+.shemaArchiEmber {
+	float:right;
+	margin-right:100px;
+	font-size: 22px; 
+	color:#444;
+	
+}
+
+.col-left img .comparaison {
+    width :50%;
+    float: left;
+    
+}
+
+.biblio {
+        position: absolute;
+    bottom: 20px;
+    text-align: center;
+    right: 0;
+    font-size: 16px;
+    padding: 5px 0;
+    margin: 10px 0;
+    border-top: 2px solid #000;
+    text-decoration: underline;
+}
+.ref {
+    font-size: 12px;
+}
+#slide-3 .content_slide li {
+    color: #000;
+    font-size: 24px;
+}
+#slide-5 .content_slide li {
+        line-height: 24px;
+         font-size: 24px;
+}
+#slide-5 .content_slide p {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+#slide-7 .content_slide img {
+    display: inline-block;
+    margin: 20px;
+    width: 200px;
+}
+p {
+    margin-bottom: 10px;
+}

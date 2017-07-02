@@ -1,0 +1,1430 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=1024, user-scalable=no">
+
+    <title>EmberJS</title>
+
+    <!-- Required stylesheet -->
+    <link rel="stylesheet" media="screen" href="core/deck.core.css">
+
+    <!-- Extension CSS files go here. Remove or add as needed. -->
+    <link rel="stylesheet" media="screen" href="extensions/goto/deck.goto.css">
+    <link rel="stylesheet" media="screen" href="extensions/menu/deck.menu.css">
+    <link rel="stylesheet" media="screen" href="extensions/navigation/deck.navigation.css">
+    <link rel="stylesheet" media="screen" href="extensions/status/deck.status.css">
+    <link rel="stylesheet" media="screen" href="jquery.fancybox.min.css">
+    <link rel="stylesheet" media="screen" href="extensions/scale/deck.scale.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <!-- Style theme. More available in /themes/style/ or create your own. -->
+    <link rel="stylesheet" media="screen" href="themes/style/web-2.0.css">
+
+    <!-- Transition theme. More available in /themes/transition/ or create your own. -->
+    <link rel="stylesheet" media="screen" href="themes/transition/horizontal-slide.css">
+
+    <!-- Basic black and white print styles -->
+    <link rel="stylesheet" media="print" href="core/print.css">
+
+    <!-- Required Modernizr file -->
+    <script src="modernizr.custom.js"></script>
+</head>
+<body>
+<div class="deck-container">
+
+    <!-- Begin slides. Just make elements with a class of slide. -->
+    <section class="slide">
+        <div class="header_slide">
+            <img src="images/ember-logo.svg" width="120" alt="logo"/>
+        </div>
+        <h3>Framework EMBERJS</h3>
+        <img src="images/ember_logo_accueil.png" alt="accueil" width="160" style="margin:10px auto;"/>
+        <div class="presenter">
+            <ul>
+                <li>Présenté par :</li>
+                <li>- Sofiaa FADDI</li>
+                <li>- Amaia NAZABAL</li>
+                <li>- Amina MEZIANI</li>
+                <li>- Mouad ELGHARBI</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Plan -->
+    <section class="slide">
+        <div class="header_slide">
+            <img src="images/ember-logo.svg" alt="logo"/>
+            <ul class="menu">
+                <li> 1. Présentation</li>
+                <li> 2. Instalation</li>
+                <li> 3. Architecture</li>
+                <li> 4. Pourquoi Ember</li>
+                <li> 5. Exemple simple</li>
+                <li> 6. Démonstration</li>
+            </ul>
+        </div>
+        <div class="content_slide plan">
+            <div class="col-left">
+                <h5 style="margin:20px 0 10px;">Plan</h5>
+                <ul>
+                    <li><strong> I. Qu'est ce que 'EMBER JS' ?</strong>
+                        <ul>
+                            <li> 1. Généralités</li>
+                            <li> 2. Historique</li>
+                            <li> 3. Technologies utilisées</li>
+                            <li> 4. Qui l'utilise ?</li>
+                            <li> 5. Performance</li>
+                            <li> 6. Pour aller plus loin</li>
+                        </ul>
+                    </li>
+                    <li><strong>II. Architecture et arborescence d'un projet</strong></li>
+                    <li><strong>III. Pourquoi Ember</strong>
+                        <ul>
+                            <li>1. Comparaison entre framework</li>
+                            <li>2. Avantages et inconvénients</li>
+                        </ul>
+                    </li>
+                    <li><strong>IV. Exemple simple</strong></li>
+                    <li><strong>V. Démonstration : Gestion des notes </strong></li>
+
+                </ul>
+            </div>
+            <div class="col-left">
+                <img src="images/presentation.png" alt="presentation" style="width:80%;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Généralités -->
+    <section class="slide">
+        <div class="header_slide without_menu">
+            <div class="without_summer">
+                <img src="images/ember-logo.svg" alt="logo"/>
+                <ul class="menu">
+                    <li class="active"> I.Qu'est ce que 'EMBER JS' ?</li>
+                    <li> II. Architecture et arborescence d'un projet</li>
+                    <li> III. Pourquoi Ember</li>
+                    <li> IV. Exemple simple</li>
+                    <li> V. Démonstration</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content_slide">
+            <h5> Généralités </h5>
+            <br/>
+            <div class="col-left">
+                <ul class="generalite">
+                    <li><span>&#10003;</span>Framework JS</li>
+                    <li><span>&#10003;</span>Framework Open-Source</li>
+                    <li><span>&#10003;</span>Licence MIT</li>
+                    <li><span>&#10003;</span>Norme JS: ES6 ES5</li>
+
+                </ul>
+            </div>
+            <div class="col-right">
+                <ul class="generalite">
+                    <li><span>&#10003;</span>S’appuie sur une architecture MVC</li>
+                    <li><span>&#10003;</span>Création d’applications web Monopage</li>
+                    <li><span>&#10003;</span>Framework d’application web côté client</li>
+                    <li><span>&#10003;</span>NodeJS "npm install -g ember-cli"</li>
+
+                </ul>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Histoire -->
+    <section class="slide">
+        <div class="header_slide without_menu">
+            <div class="without_summer">
+                <img src="images/ember-logo.svg" alt="logo"/>
+                <ul class="menu">
+                    <li class="active"> I.Qu'est ce que 'EMBER JS' ?</li>
+                    <li> II. Architecture et arborescence d'un projet</li>
+                    <li> III. Pourquoi Ember</li>
+                    <li> IV. Exemple simple</li>
+                    <li> V. Démonstration</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content_slide">
+            <h5> Historique </h5>
+            <div class="col-left">
+                <div class="col-left">
+                    <img src="images/Yehuda.jpeg" alt="Developpeur"/>
+                </div>
+                <div class="col-right">
+
+                    <ul>
+                        <li>Yehuda Katz</li>
+                        <li>8 Décembre 2011</li>
+                        <img src="images/emberHistoire.png"/>
+                    </ul>
+
+                </div>
+
+            </div>
+            <div>
+                <img src="images/Versions.png" alt="Versions" class="imgVersions"/>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Petite comparaison des deux versions-->
+    <section class="slide">
+        <div class="header_slide without_menu">
+            <div class="without_summer">
+                <img src="images/ember-logo.svg" alt="logo"/>
+                <ul class="menu">
+                    <li class="active"> I.Qu'est ce que 'EMBER JS' ?</li>
+                    <li> II. Architecture et arborescence d'un projet</li>
+                    <li> III. Pourquoi Ember</li>
+                    <li> IV. Exemple simple</li>
+                    <li> V. Démonstration</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content_slide">
+            <h5> Comparaison des deux versions </h5>
+            <br/>
+
+            <p class="paragraph">Plusieurs changements peuvent être remarqués entre la version 1 et 2 d'Ember</p>
+            <!-- les plus importants sont -->
+            <br/>
+            <table class="table_comparaison">
+                <thead>
+                <tr>
+                    <th></th>
+                    <th>V1</th>
+                    <th>V2</th>
+
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="first-child_tr">Architecture</td>
+
+                    <td>
+                        <ul>
+                            <li>MVC (Model-Vue-Controlleur)</li>
+                        </ul>
+                    </td>
+
+                    <td>
+                        <ul>
+                            <li>MRC(modèle-route-composant).</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="first-child_tr">Data Binding</td>
+                    <td> Databinding à double sens</td>
+                    <td> Data down action up (DDAU)</td>
+                </tr>
+                <tr>
+                    <td class="first-child_tr">Engin de templating</td>
+                    <td>
+                        <ul>
+                            <li>Glimmer 1</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Glimmer 2</li>
+                        </ul>
+                    </td>
+
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+    </section>
+
+    <!-- Technologies utilisées -->
+    <section class="slide">
+        <div class="header_slide without_menu">
+            <div class="without_summer">
+                <img src="images/ember-logo.svg" alt="logo"/>
+                <ul class="menu">
+                    <li class="active"> I.Qu'est ce que 'EMBER JS' ?</li>
+                    <li> II. Architecture et arborescence d'un projet</li>
+                    <li> III. Pourquoi Ember</li>
+                    <li> IV. Exemple simple</li>
+                    <li> V. Démonstration</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content_slide">
+            <h5 style="margin-top:10px;"> Technologies utilisées</h5>
+            <p>
+                <strong>Bower :</strong>
+            <ul>
+                <li>Gestionnaire de packages et de dépendances web</li>
+                <li>Il permet de chercher/télécharger/installer/gérer les dépendances des packages depuis leur dépôt.
+                </li>
+            </ul>
+
+            </p>
+            <p><strong>Ember data : </strong>C’est une bibliothèque qui permet de gérer le stockage de données d'une
+                application Ember.</p>
+            <ul>
+                <li>ember install ember-data</li>
+                <li>import DS from 'ember-data';</li>
+            </ul>
+
+            <p><strong>Ember fire :</strong></p>
+            <ul>
+                <li>EmberFire est un adaptateur pour utiliser Firebase avec Ember Data.</li>
+                <li>Modèles stockés dans Ember Data synchronisés automatiquement avec la base de données Firebase
+                    distante.
+                </li>
+                <li>save () sur un enregistrement pour conserver ces données dans la base de données Firebase.</li>
+                <li>ember install emberfire</li>
+            </ul>
+
+        </div>
+    </section>
+
+    <!-- Handelbars -->
+    <section class="slide">
+        <div class="header_slide without_menu">
+            <div class="without_summer">
+                <img src="images/ember-logo.svg" alt="logo"/>
+                <ul class="menu">
+                    <li class="active"> I.Qu'est ce que 'EMBER JS' ?</li>
+                    <li> II. Architecture et arborescence d'un projet</li>
+                    <li> III. Pourquoi Ember</li>
+                    <li> IV. Exemple simple</li>
+                    <li> V. Démonstration</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content_slide">
+            <h5> Handelbars</h5>
+            <div class="col-left app">
+                <p class="paragraph"> - Gestionnaire de templates</p>
+                <p class="paragraph"> - HTML statique et un contenu dynamique {{}} </p>
+                <p class="paragraph"> - Il fournit les outils logiques(#if) et les boucles (#each) </p>
+                <a rel="group1" data-fancybox="images" href="images/boucleHandlbars.png"><img
+                        src="images/boucleHandlbars.png" alt="demare"/></a>
+                </br>
+                <p class="paragraph"> - Il permet l'utilisation des block helpers </p>
+                <a rel="group1" data-fancybox="images" href="images/linkToHandl.png"><img
+                        src="images/linkToHandl.png" alt="demare"/></a>
+
+            </div>
+            <div class="col-left app">
+
+                <p class="paragraph"> - Il permet l'utilisation des helpers de formatage avec la syntaxe {{maFunction
+                    arguments}} </p>
+                <a rel="group1" data-fancybox="images" href="images/helper.png"><img
+                        src="images/helper.png" alt="helper"/></a>
+                <br/>
+                <a rel="group1" data-fancybox="images" href="images/templateHelper.png"><img
+                        src="images/templateHelper.png" alt="helper"/></a>
+                </br>
+                <p class="paragraph"> - Les templates peuvent être précompilés (fichiers .hbs) ou tout simplement écrits
+                    dans une balise
+                    <script type="text/x-handlebars"></script>
+                    dans la page HTML.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Qui l'utilise ? -->
+    <section class="slide">
+        <div class="header_slide without_menu">
+            <div class="without_summer">
+                <img src="images/ember-logo.svg" alt="logo"/>
+                <ul class="menu">
+                    <li class="active"> I.Qu'est ce que 'EMBER JS' ?</li>
+                    <li> II. Architecture et arborescence d'un projet</li>
+                    <li> III. Pourquoi Ember</li>
+                    <li> IV. Exemple simple</li>
+                    <li> V. Démonstration</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content_slide">
+            <h5> Qui l'utilise ? </h5>
+            <p class="paragraph">
+                Ember.js est bien répondu sur le marché, en étant notamment utilisé par de large sites web, et de
+                grosses multinationales.
+            </p>
+
+            <p style="text-align:center;"><img src="images/yahoo.png" alt="yahoo"/>
+                <img src="images/linkedin.png" alt="linkedin"/>
+                <img src="images/microsoft.png" alt="microsoft"/></p>
+            <p style="text-align:center;"><img src="images/kickstarter.png" alt="kickstarter"/>
+                <img src="images/netflix.png" alt="netflix"/>
+                <img src="images/twitch.png" alt="twitch"/></p>
+
+            <div class="biblio">
+                http://emberjs.com/ember-users/
+            </div>
+        </div>
+    </section>
+
+    <!-- Performance -->
+    <section class="slide">
+        <div class="header_slide without_menu">
+            <div class="without_summer">
+                <img src="images/ember-logo.svg" alt="logo"/>
+                <ul class="menu">
+                    <li class="active"> I.Qu'est ce que 'EMBER JS' ?</li>
+                    <li> II. Architecture et arborescence d'un projet</li>
+                    <li> III. Pourquoi Ember</li>
+                    <li> IV. Exemple simple</li>
+                    <li> V. Démonstration</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content_slide">
+            <h5> Performances </h5>
+            <p class="paragraph">
+                Depuis l’introduction de Glimmer, le dernier moteur de rendu d’Ember.js, les performance de ce dernier
+                peuvent être remis en question, “positivement”. Glimmer est une sorte d'intégration des bénéfices du DOM
+                virtuel de React, tout en préservant la compatibilité avec l’API d’Ember.
+            </p>
+            </br>
+            <p class="paragraph">
+                Ce qu’il faut noter à propos de Glimmer :
+            </p>
+            <ul class="critere">
+                <li>Il différencie les composants Statique, et les composants Dynamiques, réduisant ainsi le nombre
+                    d'éléments à vérifier lors qu’un update-check. Ceci peut être achevé grâce à l'expressivité des
+                    template Handlebar.
+                </li>
+                <li>Les noeuds sont stockés et comparés comme étant un flux d’objets (une queue de valeurs). Pour
+                    vérifier si un noeud du real DOM a besoin d’une modification, la dernière valeur d’un noeud de
+                    Glimmer est comparée à la dernière valeur connue du real DOM, Si la valeur est inchangée, aucune
+                    actions n’est entamée.
+                </li>
+            </ul>
+
+            <div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Avantages et inc de Glimmer -->
+    <section class="slide">
+        <div class="header_slide without_menu">
+            <div class="without_summer">
+                <img src="images/ember-logo.svg" alt="logo"/>
+                <ul class="menu">
+                    <li class="active"> I.Qu'est ce que 'EMBER JS' ?</li>
+                    <li> II. Architecture et arborescence d'un projet</li>
+                    <li> III. Pourquoi Ember</li>
+                    <li> IV. Exemple simple</li>
+                    <li> V. Démonstration</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content_slide">
+            <h5> Glimmer </h5>
+            <div class="col-left">
+                <h5>Avantages</h5>
+                <ul class="critere">
+                    <li>Rapide et efficace</li>
+                    <li>Différenciation entre éléments statiques et dynamiques</li>
+                    <li>100% compatible avec l’API d’Ember (sans mise à jour du code existant)</li>
+                    <li>Représentation du DOM peu coûteuse en mémoire.</li>
+
+                </ul>
+            </div>
+            <div class="col-right">
+                <h5>Inconvénients</h5>
+                <ul class="critere">
+                    <li>Conçus pour être utilisé avec Ember uniquement</li>
+                    <li>Une seule frontend disponible.</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Comparaison des performances-->
+    <section class="slide">
+        <div class="header_slide without_menu">
+            <div class="without_summer">
+                <img src="images/ember-logo.svg" alt="logo"/>
+                <ul class="menu">
+                    <li class="active"> I.Qu'est ce que 'EMBER JS' ?</li>
+                    <li> II. Architecture et arborescence d'un projet</li>
+                    <li> III. Pourquoi Ember</li>
+                    <li> IV. Exemple simple</li>
+                    <li> V. Démonstration</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content_slide">
+            <h5> Comparaison des performances </h5>
+            <p>React Virtual DOM vs Incremental DOM vs Ember’s Glimmer</p>
+            <div class="col-left app">
+                <img src="images/comparaison1.png" alt="comparaison1" class="comparaison" style="width:300px;"/>
+                </br>
+                <img src="images/comparaison2.png" alt="comparaison2" class="comparaison" style="width:300px;"/>
+            </div>
+            <div class="col-left app">
+                <img src="images/comparaison3.png" alt="comparaison3" style="width:300px;"/>
+                </br>
+                <img src="images/comparaison4.png" alt="comparaison4" style="width:300px;"/>
+            </div>
+            <span class="ref">Tests effectués avec dbmonster. En utilisant chromium 46 sous linux avec un Core i5-5200U </span>
+            <div class="biblio">
+                <p>
+
+                    [1] https://auth0.com/blog/face-off-virtual-dom-vs-incremental-dom-vs-glimmer/
+
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Pour aller plus loin -->
+    <section class="slide">
+        <div class="header_slide without_menu">
+            <div class="without_summer">
+                <img src="images/ember-logo.svg" alt="logo"/>
+                <ul class="menu">
+                    <li class="active"> I.Qu'est ce que 'EMBER JS' ?</li>
+                    <li> II. Architecture et arborescence d'un projet</li>
+                    <li> III. Pourquoi Ember</li>
+                    <li> IV. Exemple simple</li>
+                    <li> V. Démonstration</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content_slide">
+
+            <h5>Pour aller plus loin</h5>
+            <ul class="critere">
+                <li> Ember Data</li>
+                <li> Liquide Fire</li>
+                <li> Fastboot</li>
+                <li> Ember-Inspector</li>
+                <li> Firebase</li>
+            </ul>
+
+
+        </div>
+    </section>
+
+
+    <!-- Ember-data -->
+    <section class="slide">
+        <div class="header_slide without_menu">
+            <div class="without_summer">
+                <img src="images/ember-logo.svg" alt="logo"/>
+                <ul class="menu">
+                    <li class="active"> I.Qu'est ce que 'EMBER JS' ?</li>
+                    <li> II. Architecture et arborescence d'un projet</li>
+                    <li> III. Pourquoi Ember</li>
+                    <li> IV. Exemple simple</li>
+                    <li> V. Démonstration</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content_slide">
+            <h5> Ember-DATA </h5>
+            <div class="col-left">
+                <p class="paragraph">La couche d’abstraction de stockage d’Ember qui permet de manipuler des données
+                    enregistrées sur un serveur.</p>
+                <p class="paragraph">Cette bibliothèque procède ainsi : </p>
+                <ul class="critere">
+                    <li>Récupérer des données sur le serveur.</li>
+                    <li>Les enregistrer sur le Store</li>
+                    <li>Les mettres à jour dans le navigateur</li>
+                    <li>Les renvoyer au serveur pour la sauvegarde</li>
+
+                </ul>
+            </div>
+            <div class="col-right">
+                <img src="images/ember-data.png" alt="ember-data" width="320"/>
+            </div>
+            <div class="biblio">
+                http://vfsvp.fr/article/une-introduction-en-profondeur-a-emberjs/
+            </div>
+        </div>
+    </section>
+
+    <!-- Ember Inspector / Liquid Fire-->
+    <section class="slide">
+        <div class="header_slide without_menu">
+            <div class="without_summer">
+                <img src="images/ember-logo.svg" alt="logo"/>
+                <ul class="menu">
+                    <li class="active"> I.Qu'est ce que 'EMBER JS' ?</li>
+                    <li> II. Architecture et arborescence d'un projet</li>
+                    <li> III. Pourquoi Ember</li>
+                    <li> IV. Exemple simple</li>
+                    <li> V. Démonstration</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content_slide">
+
+            <div class="col-left">
+                <h5 style="margin-top:0;">Liquid Fire </h5>
+                <p class="paragraph">Permet la gestion des transitions entre pages avec un niveau d’abstraction très
+                    élevé.</p>
+                </br>
+                <h5 style="margin-top:0;">Fastboot </h5>
+                <ul class="critere">
+                    <li>Plugin d’Ember CLI</li>
+                    <li>Donne le pouvoir d'utiliser NodeJS</li>
+                    <li>Permet de visionner l’HTML et le CSS directement, avec le JavaScript qui se télécharge en
+                        Arrière-plan.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-left">
+                <h5 style="margin-top:0;">Ember-Inspector </h5>
+                <ul class="critere">
+                    <li>Extension disponible sous Chrome et Firefox</li>
+                    <li>Il permet le débogage des application Ember</li>
+                </ul>
+
+            </div>
+            <div class="ember-insp">
+                <img src="images/ember-inspector.png" alt="emger-inspector"/>
+            </div>
+        </div>
+
+    </section>
+
+    <!--Firebase-->
+    <section class="slide">
+        <div class="header_slide without_menu">
+            <div class="without_summer">
+                <img src="images/ember-logo.svg" alt="logo"/>
+                <ul class="menu">
+                    <li class="active"> I.Qu'est ce que 'EMBER JS' ?</li>
+                    <li> II. Architecture et arborescence d'un projet</li>
+                    <li> III. Pourquoi Ember</li>
+                    <li> IV. Exemple simple</li>
+                    <li> V. Démonstration</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content_slide">
+            <h5>Firebase</h5>
+            <!--<img src="images/firebase.png" alt="firebase" width="300px"/>-->
+
+            <p class="paragraph">Firebase est une suite de produits intégrés conçus pour aider à développer une
+                application Ember, à développer une base d'utilisateurs.</p>
+            <p class="paragraph">Firebase permet de :</p>
+            <ul class="critere">
+                <li>Authentifier les utilisateurs.</li>
+                <li>Synchroniser et stocker des données.</li>
+            </ul>
+
+        </div>
+    </section>
+
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+
+    <!-- Architecture -->
+
+    <section class="slide">
+        <div class="header_slide without_menu">
+            <div class="without_summer">
+                <img src="images/ember-logo.svg" alt="logo"/>
+                <ul class="menu">
+                    <li> I.Qu'est ce que 'EMBER JS' ?</li>
+                    <li class="active"> II. Architecture et arborescence d'un projet</li>
+                    <li> III. Pourquoi Ember</li>
+                    <li> IV. Exemple simple</li>
+                    <li> V. Démonstration</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content_slide">
+            <div class="col-left">
+                <p class="paragraph">
+                    <strong>Router : </strong>
+                    Une fois que l’utilisateur a tapé une URL, la première chose qui se produit, c’est que le router
+                    détermine à quel router handler va envoyer la requête.
+                </p>
+                <p class="paragraph">
+                    <strong>Router handler : </strong>
+                    Il interprète le template, ou bien, si c’est le cas il charge le modèle de façon qui soit disponible
+                    dans le template.
+                </p>
+
+                <p class="paragraph">
+                    <strong>Template : </strong>
+                    C’est qui organise le layout HTML, et utilise la syntaxe Handelbars. Les templates peuvent montrer
+                    des propriétés fournies par le contexte, soit le router ou le controller.
+                </p>
+
+                <p class="paragraph">
+                    <strong>Component : </strong>
+                    Les components ont deux parties : un template écrit dans Handlebars et un fichier JavaScript qui
+                    définit son comportement.
+                    Les components sont des balises personnalisés qui permet aux développeurs de réutiliser et
+                    simplifier le code.
+                </p>
+            </div>
+            <div class="col-left big">
+                <a data-fancybox="images" href="images/ember-core-concepts.png"><img
+                        src="images/ember-core-concepts.png" class="img-big" alt="Concepts basics d'EmberJS"
+                        height="500"></a>
+            </div>
+            <div class="biblio">
+                <p>
+                    https://emberigniter.com/5-essential-ember-concepts/
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="header_slide without_menu">
+            <div class="without_summer">
+                <img src="images/ember-logo.svg" alt="logo"/>
+                <ul class="menu">
+                    <li> I.Qu'est ce que 'EMBER JS' ?</li>
+                    <li class="active"> II. Architecture et arborescence d'un projet</li>
+                    <li> III. Pourquoi Ember</li>
+                    <li> IV. Exemple simple</li>
+                    <li> V. Démonstration</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content_slide">
+            <div class="col-left">
+                <br/>
+                <h5>Architecture de développement </h5>
+                <p class="paragraph ">
+                    Comment on avait dit avant, une simple application Ember.js utilise le <strong>Router</strong> pour
+                    résoudre l’URL, et envoyer le <strong>Model</strong> vers un
+                    <strong>Component</strong> / <strong>Template</strong>
+                    pour la visualisation et l’interaction avec l’utilisateur.
+                </p>
+                <p class="paragraph ">
+                    Maintenant, pour avoir un idée plus claire..
+                </p>
+            </div>
+            <div class="col-left big">
+                <br/>
+                <img src="images/highlevel.png" class="img-big" alt="Concepts basics d'EmberJS">
+            </div>
+            <div class="biblio">
+                <p>
+                    https://emberigniter.com/5-essential-ember-concepts/
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="header_slide without_menu">
+            <div class="without_summer">
+                <img src="images/ember-logo.svg" alt="logo"/>
+                <ul class="menu">
+                    <li> I.Qu'est ce que 'EMBER JS' ?</li>
+                    <li class="active"> II. Architecture et arborescence d'un projet</li>
+                    <li> III. Pourquoi Ember</li>
+                    <li> IV. Exemple simple</li>
+                    <li> V. Démonstration</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content_slide">
+            <div class="col-left">
+                <h5>Diagramme d'interaction entre composants 1/3</h5>
+                <p class="paragraph">
+                    1. Le <strong>Router</strong> analyse l’URL <label class="shadow">/items/2</label> et confère le
+                    contrôle
+                    au <strong>Router Handler</strong> Item Route avec le paramètre item_id = 2
+                </p>
+                <p class="paragraph">
+                    2. <label class="shadow">Item Route</label> appel la fonction <label class="shadow">model()</label>
+                    qui
+                    retourne le <strong>Model</strong> (Item avec id=2) en cherchant à travers d’un
+                    <strong>Service</strong>
+                    (Ember Data).
+                </p>
+                <p class="paragraph">
+                    3. <label class="shadow">renderComponent()</label> est exécuté pour appeler le
+                    <strong>Component</strong>
+                    <label class="shadow">Item Display Component</label>, en l’envoyant l’item du <strong>Model</strong>
+                    trouvé.
+                </p>
+                <p class="paragraph">
+                    4. <label class="shadow">Item Display Component</label> est responsable de l’interface d’utilisateur
+                    :
+                    le rendu et l’actualisation du DOM, et gérer les évènements du navigateur.
+
+                </p>
+                <p class="paragraph">
+                    Celui-ci est un exemple de <strong>DATA DOWN</strong>.
+                </p>
+
+            </div>
+            <div class="col-left big">
+                <a data-fancybox="images" href="images/simplified.png"><img src="images/simplified.png" class="img-big"
+                                                                            alt="Diagramme d'interaction" height="500"></a>
+            </div>
+            <div class="biblio">
+                <p>
+                    https://emberigniter.com/5-essential-ember-concepts/
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="header_slide without_menu">
+            <div class="without_summer">
+                <img src="images/ember-logo.svg" alt="logo"/>
+                <ul class="menu">
+                    <li> I.Qu'est ce que 'EMBER JS' ?</li>
+                    <li class="active"> II. Architecture et arborescence d'un projet</li>
+                    <li> III. Pourquoi Ember</li>
+                    <li> IV. Exemple simple</li>
+                    <li> V. Démonstration</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content_slide">
+            <div class="col-left">
+                <br/>
+                <h5>Diagramme d'interaction entre composants 2/3</h5>
+
+                <p class="paragraph">
+                    Mais, non seulement le Router peut passer le Model aux components, on peut aussi définir des
+                    Actions qui seront appelés par les templates ou components.
+                </p>
+                <p class="paragraph">
+                    Par exemple :
+
+                </p>
+
+            </div>
+            <div class="col-left big">
+                <br/>
+                <br/>
+                <img src="images/ember-code.png" class="img-big" style="width: 500px !important;" alt="Action">
+            </div>
+
+            <div class="biblio">
+                <p>
+                    [1] https://emberigniter.com/5-essential-ember-concepts/
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="header_slide without_menu">
+            <div class="without_summer">
+                <img src="images/ember-logo.svg" alt="logo"/>
+                <ul class="menu">
+                    <li> I.Qu'est ce que 'EMBER JS' ?</li>
+                    <li class="active"> II. Architecture et arborescence d'un projet</li>
+                    <li> III. Pourquoi Ember</li>
+                    <li> IV. Exemple simple</li>
+                    <li> V. Démonstration</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content_slide">
+            <div class="col-left">
+                <h5>Diagramme d'interaction entre composants 3/3</h5>
+
+                <p class="paragraph">
+                    Et ainsi, l’action <label class="shadow">remove</label> qui est dans le <strong>Component</strong>
+                    est appelé quand on click sur le button, ensuite, la méthode appelle encore au <strong>Router</strong>
+                    qui exécute l'action qu'on vient de définir et supprime le tuple du <strong>Model</strong>.
+                </p>
+                <p class="paragraph">
+                    Bref, on peut noter que les actions s'élèvent, alors que les données descendent.
+                    C'est ainsi que le patron de conception de Ember.js fonctionne: <strong>Data Down, Actions Up</strong>.
+                </p>
+
+            </div>
+            <div class="col-left big">
+                <a data-fancybox="images" href="images/simplified2.png"><img src="images/simplified2.png"
+                                                                             class="img-big" alt="Action" height="500"></a>
+
+            </div>
+
+            <div class="biblio">
+                <p>
+                    https://emberigniter.com/5-essential-ember-concepts/
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="slide">
+        <div class="header_slide without_menu">
+            <div class="without_summer">
+                <img src="images/ember-logo.svg" alt="logo"/>
+                <ul class="menu">
+                    <li> I.Qu'est ce que 'EMBER JS' ?</li>
+                    <li class="active"> II. Architecture et arborescence d'un projet</li>
+                    <li> III. Pourquoi Ember</li>
+                    <li> IV. Exemple simple</li>
+                    <li> V. Démonstration</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content_slide">
+            <div class="col-left">
+                <h5 class="tableau_titre">Organisation des directoires </h5>
+                <p class="paragraph">
+                    <strong> * app : </strong>
+                    C’est le dossier où les modèles, templates, components, etc. sont stockés.
+                    La plupart du code dans un projet Ember.js, se passe ici.
+                </p>
+                <p class="paragraph">
+                    <strong> * config : </strong> C’est le dossier où se trouve le fichier ‘environment.js’ qui permet
+                    de
+                    définir
+                    des configurations du projet, dans les différents environnements: soit dans production, développement ou test.
+                </p>
+                <p class="paragraph">
+                    <strong> * node_modules / package.json : </strong>
+                    C’est le fichier et dossier pour npm. Si on installe Ember CLI add-ons dans un projet, on les verra
+                    dans le
+                    fichier package.json
+                </p>
+                <p class="paragraph">
+                    <strong> * public : </strong>
+                    C’est le dossier qui contient assets, images et fonts.
+                </p>
+                <p class="paragraph">
+                    <strong> * vendor : </strong>
+                    C’est le dossier où on garde certains contenu statique, comme des libraires JavaScript ou CSS, qui
+                    n’est pas
+                    géré par Bower.
+                </p>
+                <p class="paragraph">
+                    <strong> * tests : </strong>
+                    Tous les test automatiques pour le projet sont stockés ici. Pour les exécuter on utilise Ember Cli,
+                    qui
+                    exécute la liste des test qui sont inclus dans le fichier ‘testem.js’.
+                </p>
+            </div>
+            <div class="col-left big">
+                <a data-fancybox="images" href="images/directory-structure.png"><img
+                        src="images/directory-structure.png" class="img-big" alt="Diagramme d'interaction" height="500"></a>
+            </div>
+
+            <div class="biblio">
+                <p>
+                    [1] http://www.thegreatcodeadventure.com/ember-js-tutorial/
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="header_slide without_menu">
+            <div class="without_summer">
+                <img src="images/ember-logo.svg" alt="logo"/>
+                <ul class="menu">
+                    <li> I.Qu'est ce que 'EMBER JS' ?</li>
+                    <li class="active"> II. Architecture et arborescence d'un projet</li>
+                    <li> III. Pourquoi Ember</li>
+                    <li> IV. Exemple simple</li>
+                    <li> V. Démonstration</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content_slide">
+            <h5>Ember: MVC ou MRC? </h5>
+            <p class="paragraph">
+                Même si Ember est un framework qui a été connu pour être MVC, son approche commence à changer.
+            </p>
+            <p class="paragraph">
+                À partir d'Ember 2.0 le composant <strong>View</strong> a été enlevé de son architecture.
+            </p>
+            <p class="paragraph">
+                On parle plutôt d'un approche MRC (Model - Route - Component).
+            </p>
+            <blockquote>
+                <p>
+                    Controllers are very much like components, so much so that in future versions of Ember, controllers
+                    will be replaced entirely with components.
+                </p>
+                <footer>Guide officiel Ember v2.2.0 https://guides.emberjs.com/v2.2.0/controllers/ </footer>
+            </blockquote>
+
+
+            <p class="paragraph">
+                Cependant, jusqu'à présent les controllers font partie intégrale de l'architecture d'Ember et ils sont
+                générés par le framework même si on ne les déclare pas explicitement.
+            </p>
+            <!--
+            <table class="table">
+                <thead>
+                <tr>
+                    <th style="width: 15%">Type d'incidente</th>
+                    <th style="width: 20%">Évènement</th>
+                    <th style="width: 20%">Date de publication</th>
+                    <th>Description de l’incidente</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="first-child_tr">Incidente de securité</td>
+                    <td>
+                        Exposition de clé d’accès à AWS S3.
+                    </td>
+                    <td>
+                        29/11/2016
+                    </td>
+                    <td>
+                        Dans le npm package ember-source aurait été inclus un fichier avec qui contenait la clé d’accès
+                        à
+                        AWS S3, cependant après des heures de révisions l’équipe de travail n’a pas détecté aucune
+                        intromission
+                        dans le serveur.
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            -->
+
+
+        </div>
+    </section>
+
+    <!---------------------------->
+
+    <section class="slide">
+        <div class="header_slide without_menu">
+            <div class="without_summer">
+                <img src="images/ember-logo.svg" alt="logo"/>
+                <ul class="menu">
+                    <li> I.Qu'est ce que 'EMBER JS' ?</li>
+                    <li> II. Architecture et arborescence d'un projet</li>
+                    <li class="active"> III. Pourquoi Ember</li>
+                    <li> IV. Exemple simple</li>
+                    <li> V. Démonstration</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content_slide">
+            <div class="col-left">
+                <h5>Critères de comparaison</h5>
+                <ul class="critere">
+                    <li> Fonctionnalités</li>
+                    <li> Flexibilité</li>
+                    <li> Apprentissage et documentation</li>
+                    <li> Communauté</li>
+                    <li> Taille</li>
+                    <li> Performance</li>
+                    <li> Testabilité</li>
+                </ul>
+            </div>
+            <div class="col-left">
+                <img src="images/angular.png" alt="angular"/>
+                <img src="images/backbone.png" alt="backbone"/>
+                <img src="images/can.png" alt="can"/>
+                <img src="images/ember.png" alt="ember"/>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="header_slide without_menu">
+            <div class="without_summer">
+                <img src="images/ember-logo.svg" alt="logo"/>
+                <ul class="menu">
+                    <li> I.Qu'est ce que 'EMBER JS' ?</li>
+                    <li> II. Architecture et arborescence d'un projet</li>
+                    <li class="active"> III. Pourquoi Ember</li>
+                    <li> IV. Exemple simple</li>
+                    <li> V. Démonstration</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content_slide">
+            <h5 class="tableau_titre">Tableau de comparaison entre les framework</h5>
+            <table class="table_comparaison">
+                <thead>
+                <tr>
+                    <th></th>
+                    <th><img src="images/angular.png" alt="angular"/></th>
+                    <th><img src="images/backbone.png" alt="backbone"/></th>
+                    <th><img src="images/can.png" alt="can"/></th>
+                    <th><img src="images/ember.png" alt="ember"/></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="first-child_tr">Feature</td>
+                    <td>
+                        <ul>
+                            <li>Routing</li>
+                            <li>Vues partielles</li>
+                            <li>Filtered list views</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Routing</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Routing</li>
+                            <li>Vues partielles</li>
+                            <li>Filtered list views</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Routing</li>
+                            <li>Vues partielles</li>
+                            <li>Filtered list views</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="first-child_tr">Flexibilité</td>
+                    <td> Flexible à un certain degré</td>
+                    <td> Plus Flexible</td>
+                    <td> Idem(Backbone)</td>
+                    <td> Idem (Angular)</td>
+                </tr>
+                <tr>
+                    <td class="first-child_tr">Apprentissage et documentation</td>
+                    <td>
+                        <ul>
+                            <li>Le degré d'apprentissage au début est important</li>
+                            <li>La lecture de documentation est difficile</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Le degré d'apprentissage au début est important</li>
+                            <li>Pas de documentation pour la structure du code</li>
+                            <li>Apprendre d'autres bibliothéques</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Facile à comprendre juste avec la documentation</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Facile à apprendre par rapport à Angular</li>
+                            <li>Bien documenté</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="first-child_tr"> Communauté</td>
+                    <td> Grande mais pas beaucoup comparant avec Bacbkbone</td>
+                    <td> Enorme</td>
+                    <td> Petite</td>
+                    <td>Grande mais pas beaucoup comparant avec Bacbkbone</td>
+                </tr>
+                <tr>
+                    <td class="first-child_tr">Taille</td>
+                    <td>80k</td>
+                    <td>61k</td>
+                    <td>57k</td>
+                    <td>269k</td>
+                </tr>
+                <tr>
+                    <td class="first-child_tr">Performance</td>
+                    <td> Moins performant</td>
+                    <td> performant</td>
+                    <td> plus performant</td>
+                    <td> Moins performant</td>
+                </tr>
+                <tr>
+                    <td class="first-child_tr">Testabilité</td>
+                    <td>Oui</td>
+                    <td>Oui</td>
+                    <td>Oui</td>
+                    <td>Oui</td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="biblio">
+                http://sporto.github.io/blog/2013/04/12/comparison-angular-backbone-can-ember/
+            </div>
+        </div>
+
+    </section>
+    <section class="slide">
+        <div class="header_slide without_menu">
+            <div class="without_summer">
+                <img src="images/ember-logo.svg" alt="logo"/>
+                <ul class="menu">
+                    <li> I.Qu'est ce que 'EMBER JS' ?</li>
+                    <li> II. Architecture et arborescence d'un projet</li>
+                    <li class="active"> III. Pourquoi Ember</li>
+                    <li> IV. Exemple simple</li>
+                    <li> V. Démonstration</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content_slide">
+            <div class="col-left">
+                <h5>Avantages</h5>
+                <ul class="critere">
+                    <li> Outils de test intégrés ( test unitaire)</li>
+                    <li> Utilisation des commandes</li>
+                    <li> Structuré et Performant</li>
+                    <li> Documentation complète et intuitive</li>
+                    <li> Séparation simplifiée logique MVC</li>
+                </ul>
+                <img src="images/avantage.png" alt="avantage" width="200" style="margin:40px auto;float:none;"/>
+            </div>
+            <div class="col-left">
+                <h5>Inconvénients </h5>
+                <ul class="critere">
+                    <li> Rigide ( suivre la convention)</li>
+                    <li> Lourd (Pour les applications mobiles)</li>
+                    <li> Courbe d’apprentissage très raide au début</li>
+                    <li> Accouplement serré avec jQuery.</li>
+                    <li> Handlebars pollue le DOM</li>
+                </ul>
+                <img src="images/incon.png" alt="avantage" width="200" style="margin:40px auto;float:none;"/>
+
+            </div>
+        </div>
+    </section>
+    <section class="slide">
+        <div class="header_slide without_menu">
+            <div class="without_summer">
+                <img src="images/ember-logo.svg" alt="logo"/>
+                <ul class="menu">
+                    <li> I.Qu'est ce que 'EMBER JS' ?</li>
+                    <li> II. Architecture et arborescence d'un projet</li>
+                    <li> III. Pourquoi Ember</li>
+                    <li class="active"> IV. Exemple simple</li>
+                    <li> V. Démonstration</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content_slide">
+            <div class="col-left">
+                <h5> Création d'une application simple </h5>
+                <ul class="appli">
+                    <li><span>&#10003;</span>Création d'une nouvelle application.</li>
+                    <li><span>&#10003;</span>Définition d'une route ( des pages ).</li>
+                    <li><span>&#10003;</span>Écriture d'un composant UI.</li>
+                    <li><span>&#10003;</span>Déployer l'application.</li>
+                </ul>
+            </div>
+            <div class="col-left">
+                <img src="images/applicat.png" style="width:80%;"/>
+            </div>
+
+        </div>
+    </section>
+    <section class="slide">
+        <div class="header_slide without_menu">
+            <div class="without_summer">
+                <img src="images/ember-logo.svg" alt="logo"/>
+                <ul class="menu">
+                    <li> I.Qu'est ce que 'EMBER JS' ?</li>
+                    <li> II. Description détaillée de l'architecture</li>
+                    <li> III. Pourquoi Ember</li>
+                    <li class="active"> IV. Exemple simple</li>
+                    <li> V. Démonstration</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content_slide">
+            <div class="col-left app">
+                <h5 class="tableau_titre"><span>&#10003;</span>Création d'une nouvelle application</h5>
+                <p> - Création du projet </p>
+                <a rel="group1" data-fancybox="images" href="images/create_projet.png"><img
+                        src="images/create_projet.png" alt="create"/></a>
+                <p> - Démarer le serveur </p>
+                <a rel="group1" data-fancybox="images" href="images/demare_serveur.png"><img
+                        src="images/demare_serveur.png" alt="demare"/></a>
+                <p> - http://localhost:4200</p>
+                <a rel="group1" data-fancybox="images" href="images/page_accueil.png"><img src="images/page_accueil.png"
+                                                                                           alt="page accueil"/></a>
+            </div>
+            <div class="col-left app">
+                <h5 class="tableau_titre"><span>&#10003;</span>Définition des routes </h5>
+                <p> - Création d'une route universite </p>
+                <a rel="group1" data-fancybox="images" href="images/commande_route.png"><img
+                        src="images/commande_route.png" alt="commande_route"/></a>
+                <p> - Définition de la route dans le fichier router.js </p>
+                <a rel="group1" data-fancybox="images" href="images/code_router.png"><img src="images/code_router.png"
+                                                                                          alt="commande_route"/></a>
+                <p> - Définition des données dans le modèle : universite.js </p>
+                <a rel="group1" data-fancybox="images" href="images/model_list.png"><img src="images/model_list.png"
+                                                                                         alt="model"/></a>
+            </div>
+        </div>
+    </section>
+    <section class="slide">
+        <div class="header_slide without_menu">
+            <div class="without_summer">
+                <img src="images/ember-logo.svg" alt="logo"/>
+                <ul class="menu">
+                    <li> I.Qu'est ce que 'EMBER JS' ?</li>
+                    <li> II. Description détaillée de l'architecture</li>
+                    <li> III. Pourquoi Ember</li>
+                    <li class="active"> IV. Exemple simple</li>
+                    <li> V. Démonstration</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content_slide">
+            <div class="col-left app">
+                <h5 class="tableau_titre"><span>&#10003;</span> Définition des routes </h5>
+
+                <p> - Récuperation du contenu depuis le modèle dans la page universite.hbs</p>
+                <a rel="group1" data-fancybox="images" href="images/listes_hbs.png"><img src="images/listes_hbs.png"
+                                                                                         alt="model"/></a>
+                <p> - http://localhost:4200/universites </p>
+                <a rel="group1" data-fancybox="images" href="images/page_univ.png"><img src="images/page_univ.png"
+                                                                                        alt="Page_univ"/></a>
+            </div>
+            <div class="col-left app">
+                <h5 class="tableau_titre"><span>&#10003;</span>Écriture d'un composant UI</h5>
+                <p> - Création d'un components </p>
+                <a rel="group1" data-fancybox="images" href="images/Composant.png"><img src="images/Composant.png"
+                                                                                        alt="composants"/></a>
+                <p> - Modification du fichier lieux-list </p>
+                <a rel="group1" data-fancybox="images" href="images/lieux_com.png"><img src="images/lieux_com.png"
+                                                                                        alt="composants"/></a>
+                <p> - Appel au components dans le fichier universites.hbs </p>
+                <a rel="group1" data-fancybox="images" href="images/com_hbs.png"><img src="images/com_hbs.png"
+                                                                                      alt="composants"/></a>
+            </div>
+        </div>
+    </section>
+    <section class="slide">
+        <div class="header_slide without_menu">
+            <div class="without_summer">
+                <img src="images/ember-logo.svg" alt="logo"/>
+                <ul class="menu">
+                    <li> I.Qu'est ce que 'EMBER JS' ?</li>
+                    <li> II. Description détaillée de l'architecture</li>
+                    <li> III. Pourquoi Ember</li>
+                    <li class="active"> IV. Exemple simple</li>
+                    <li> V. Démonstration</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content_slide">
+            <div class="col-left app">
+                <p> - http://localhost:4200/universites </p>
+                <a rel="group1" data-fancybox="images" href="images/page_univ.png"><img src="images/page_univ.png"
+                                                                                        alt="Page_univ"/></a>
+                <br/>
+                <h5 class="tableau_titre"><span>&#10003;</span>Déployer l'application</h5>
+                <p> - Déployer l'application </p>
+                <a rel="group1" data-fancybox="images" href="images/production.png"><img
+                        src="images/production.png"/></a>
+            </div>
+            <div class="col-left app">
+                <p> - Configuration du fichier environement.js </p>
+                <a rel="group1" data-fancybox="images" href="images/envir.png"><img src="images/envir.png"/></a>
+                <p> - http://localhost/exemple </p>
+                <a rel="group1" data-fancybox="images" href="images/deploye.png"><img src="images/deploye.png"
+                                                                                      alt="image"/></a>
+            </div>
+        </div>
+    </section>
+    <section class="slide">
+        <div class="header_slide without_menu">
+            <div class="without_summer">
+                <img src="images/ember-logo.svg" alt="logo"/>
+                <ul class="menu">
+                    <li> I.Qu'est ce que 'EMBER JS' ?</li>
+                    <li> II. Architecture et arborescence d'un projet</li>
+                    <li> III. Pourquoi Ember</li>
+                    <li> IV. Exemple simple</li>
+                    <li class="active"> V. Démonstration</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content_slide">
+            <br/>
+            <br/>
+            <img src="images/demo.png">
+        </div>
+        <!-- Avoir deux colonnes -->
+        <!-- </div> -->
+        <!-- <div class="col-left app"> -->
+        <!-- Avoir deux colonnes -->
+        <!-- </div> -->
+
+    </section>
+
+    <!-- End slides. -->
+
+    <!-- Begin extension snippets. Add or remove as needed. -->
+
+    <!-- deck.navigation snippet -->
+    <div aria-role="navigation">
+        <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+        <a href="#" class="deck-next-link" title="Next">&#8594;</a>
+    </div>
+    <!-- Logo ucbl-->
+    <div class="logo_footer">
+        <img src="images/logo-ucbl.jpg" alt="logo_ucbl"/>
+    </div>
+
+    <!-- deck.status snippet -->
+    <p class="deck-status" aria-role="status">
+        <span class="deck-status-current"></span>
+        /
+        <span class="deck-status-total"></span>
+    </p>
+
+    <!-- deck.goto snippet -->
+    <form action="." method="get" class="goto-form">
+        <label for="goto-slide">Go to slide:</label>
+        <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+        <datalist id="goto-datalist"></datalist>
+        <input type="submit" value="Go">
+    </form>
+
+    <!-- End extension snippets. -->
+</div>
+
+<!-- Required JS files. -->
+<script src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.fancybox.min.js"></script>
+<script src="core/deck.core.js"></script>
+
+<!-- Extension JS files. Add or remove as needed. -->
+<script src="extensions/menu/deck.menu.js"></script>
+<script src="extensions/goto/deck.goto.js"></script>
+<script src="extensions/status/deck.status.js"></script>
+<script src="extensions/navigation/deck.navigation.js"></script>
+<script src="extensions/scale/deck.scale.js"></script>
+
+<!-- Initialize the deck. You can put this in an external file if desired. -->
+<script>
+    $(function () {
+        $.deck('.slide');
+    });
+</script>
+</body>
+</html>
